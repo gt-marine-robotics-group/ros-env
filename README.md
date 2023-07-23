@@ -17,14 +17,16 @@ This repository provides a template for creating a holistic workspace for ROS so
 │   ├── docker-compose.deploy.yml # could be for development or deployment
 ├── ros_ws
 │   ├── Dockerfile
-│   ├── pkg1
-│   │   ├── src
-│   ├── pkg2
-│   │   ├── .devcontainer
-│   │   ├── src
+│   ├── src
+│   │   ├── pkg1
+│   │   │   ├── src
+│   │   ├── pkg2
+│   │   │   ├── .devcontainer
+│   │   │   ├── src
 ├── other_ws
 │   ├── Dockerfile
-│   ├── ros.repos # install with vcstool
+│   ├── src
+│   │   ├── ros.repos # install with vcstool
 └── .gitignore
 ```
 
