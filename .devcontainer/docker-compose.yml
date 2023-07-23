@@ -1,0 +1,15 @@
+services:
+  # Main service
+  main:
+    build: 
+      context: ../
+      dockerfile: ${PWD:-.}/ros_ws/Dockerfile
+    container_name: main
+    hostname: main
+    environment:
+      - "ROS_DOMAIN_ID=1"
+    command: sleep infinity # Keep container from exiting
+    network_mode: host
+    ipc: host
+    volumes:
+      - ..:/workspace:cached
