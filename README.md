@@ -1,4 +1,6 @@
-# ROS Docker Env Template
+# ROS Dev Container Workflow Template
+
+This repository provides a template for creating a holistic workspace for ROS software stacks. This workflow takes advantage of Dev Containers, Docker, and Docker Compose in order to make the process of developing and deploying ROS projects easier.
 
 ## Example of a Docker / Dev Container Project
 
