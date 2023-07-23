@@ -8,8 +8,19 @@ services:
     hostname: main
     environment:
       - "ROS_DOMAIN_ID=1"
+      - "DISPLAY=:0.0"
+      # - "DISPLAY=$DISPLAY"
+      - "WAYLAND_DISPLAY=$WAYLAND_DISPLAY"
+      - "XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR"
+      # - "LIBGL_ALWAYS_SOFTWARE=1"
+      - "PULSE_SERVER=$PULSE_SERVER"
     command: sleep infinity # Keep container from exiting
     network_mode: host
     ipc: host
     volumes:
       - ..:/workspace:cached
+      - /mnt/wslg:/mnt/wslg
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      # - /dev/dri:/dev/dri
+    extra_hosts:
+      - "main:127.0.0.1"

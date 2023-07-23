@@ -14,6 +14,14 @@ RUN groupadd --gid $USER_GID $USERNAME \
 
 # Add rosdep update
 
+# https://github.com/ros2/rviz/issues/834
+# Fix broken Ubuntu 22.04 Mesa for WSL2 Docker https://bugs.launchpad.net/ubuntu/+source/mesa/+bug/2004649
+RUN apt-get update
+RUN apt -y install software-properties-common
+RUN add-apt-repository -y ppa:kisak/kisak-mesa
+RUN apt-get update
+RUN apt-get -y upgrade
+
 RUN echo 'source /opt/ros/humble/setup.bash' >> /home/$USERNAME/.bashrc
 RUN echo 'PROMPT_DIRTRIM=2' >> /home/$USERNAME/.bashrc
 
