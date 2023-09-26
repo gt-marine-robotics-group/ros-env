@@ -1,0 +1,11 @@
+services:
+  # Main service
+  main:
+    build: 
+      context: ../
+      dockerfile: ${PWD:-.}/ros_ws/Dockerfile
+    volumes:
+      # - ..:/workspace:cached
+      - /mnt/wslg:/mnt/wslg
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - /dev/dri:/dev/dri

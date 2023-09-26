@@ -1,0 +1,12 @@
+2023-09-26 00:34:32.130 [info] Extension host with pid 316 started
+2023-09-26 00:34:32.175 [info] Lock '/home/vs/.vscode-server/data/User/workspaceStorage/a1e42bff823657a946e69b2332610593/vscode.lock': Lock acquired.
+2023-09-26 00:34:32.258 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-09-26 00:34:32.373 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-09-26 00:34:32.374 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-09-26 00:34:32.685 [info] Eager extensions activated
+2023-09-26 00:34:32.686 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-09-26 00:34:32.687 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-09-26 00:34:38.152 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2023-09-26 00:35:10.725 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2023-09-26 00:35:10.725 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2023-09-26 00:35:29.850 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'

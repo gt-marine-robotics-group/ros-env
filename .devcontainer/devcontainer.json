@@ -2,7 +2,7 @@
     "name": "env",
     "dockerComposeFile": ["docker-compose.yml"],
     "service": "main",
-    "workspaceFolder": "/workspace",
+    "workspaceFolder": "/home",
     "remoteUser" : "vs",
     // "runArgs": [
     //     "--name=env",

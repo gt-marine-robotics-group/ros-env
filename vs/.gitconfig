@@ -1,0 +1,11 @@
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[user]
+	email = seantfish@gmail.com
+	name = Sean Fish
+[credential]
+	helper = "!f() { /home/vs/.vscode-server/bin/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d/node /tmp/vscode-remote-containers-517ee727-818a-44a9-b122-64bc204e3ec6.js git-credential-helper $*; }; f"
